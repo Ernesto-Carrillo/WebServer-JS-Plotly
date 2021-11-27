@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Index</title>
+</head>
+<form id='myForm'>
+...
+</form>
+
+<script>
+$('form#myForm').bind('submit', function() {
+    $('#otherElement').trigger('click');
+});
+
+<body>
+  <h1>Método POST para encender un led en la RaspberryPi</h1>
+  <form method="post" action="respuesta">
+    <label>Encender: <input type="text" name="nombre"></label>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

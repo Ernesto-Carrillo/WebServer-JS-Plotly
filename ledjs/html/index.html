@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>JS and Raspberry</title>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+<h1> JavaScript + Raspberry Pi + Plotly</h1>
+<form method="post" action="respuesta">
+  <label>Nombre: <input type="text" name="nombre"></label>
+  <input type="submit" value="Submit">
+</form>
+ 
+ <p>Botón de encendido</p>
+  <button id="encendido_button">ENCENDIDO!!!</button>
+  
+  <p>Botón de apagado</p>
+  <button id="apagado_button">APAGADO!!!</button>
+  <div id="tester" style="width:600px;height:500px;"></div>
+  <div id="tester2" style="width:600px;height:500px;"></div>
+
+  <p>Boton para graficar</p>
+  <button id="graph">GRAFICAR!!!</button>
+ 
+ <script>
+  var btnon=document.getElementById('encendido_button');
+  btnon.onclick=function(){
+  fetch('/clicked1', {method: 'POST'})  
+  }
+  var btnoff=document.getElementById('apagado_button');
+  btnoff.onclick=function(){
+  fetch('/clicked2', {method: 'POST'})  
+  }
+
+  var graphon=document.getElementById('graph');
+  graphon.onclick=function(){
+  fetch('/clicked3',{method: 'POST'})
+  }
+ </script>
+ 
+ <script>
+  Plotly.newPlot( 'tester', [{ x: [1, 2, 3, 4, 5], y: [1, 2, 4, 8, 16] }]);
+  </script>
+  
+  
+</body>
+</html>
