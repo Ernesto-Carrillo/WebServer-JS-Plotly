@@ -1,0 +1,19 @@
+{
+  "name": "webserver-js-plotly",
+  "version": "1.0.0",
+  "description": "Ejercicio de programación para integrar JS, Plotly y Raspberry Pi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ernesto-Carrillo/WebServer-JS-Plotly.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ernesto-Carrillo/WebServer-JS-Plotly/issues"
+  },
+  "homepage": "https://github.com/Ernesto-Carrillo/WebServer-JS-Plotly#readme"
+}
