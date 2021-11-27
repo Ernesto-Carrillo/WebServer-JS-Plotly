@@ -20,7 +20,11 @@
   <p>Botón de apagado</p>
   <button id="apagado_button">APAGADO!!!</button>
   <div id="tester" style="width:600px;height:500px;"></div>
-  <div id="tester2" style="width:600px;height:500px;"></div>
+  <div id="tester2" style="width:600px;height:500px;">
+    <script>
+      Plotly.newPlot( 'tester', [{ x: [1, 2, 3, 4, 5], y: [1, 2, 4, 8, 16] }]);
+      </script>
+  </div>
 
   <p>Boton para graficar</p>
   <button id="graph">GRAFICAR!!!</button>
@@ -41,9 +45,7 @@
   }
  </script>
  
- <script>
-  Plotly.newPlot( 'tester', [{ x: [1, 2, 3, 4, 5], y: [1, 2, 4, 8, 16] }]);
-  </script>
+ 
   
   
 </body>
